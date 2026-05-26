@@ -7,6 +7,10 @@
 - **SpForm**  schema 表单、iframe **embed** 外接
 - `@Oceaninnerpeace/public-base-request` 统一请求
 
+## 开发规范
+
+- 前端代码规范：[`docs/FRONTEND_CODE_STANDARD.md`](./docs/FRONTEND_CODE_STANDARD.md)
+
 ## 技术栈
 
 | 项 | 版本 |
