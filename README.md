@@ -34,6 +34,39 @@ pnpm dev
 
 详见 [docs/TEMPLATE.md](./docs/TEMPLATE.md)。
 
+### 5 分钟上手（操作流）
+
+```text
+1) Fork/复制模板
+   ↓
+2) 修改 .env.development
+   - VITE_APP_TITLE
+   - VITE_QIANKUN_APP_NAME
+   - VITE_MICRO_BASE_PATH
+   - VITE_DEV_PORT
+   - VITE_PROXY_TARGET
+   ↓
+3) 修改路由
+   - src/router/routes.ts
+   - src/router/menu-map.ts
+   ↓
+4) 本地验证
+   pnpm install
+   pnpm dev
+   ↓
+5) 接入基座 public-base-fe
+   - portal-apps.ts 增加应用
+   - 基座 .env.development 增加 entry
+```
+
+### 一键检查清单
+
+- [ ] `VITE_QIANKUN_APP_NAME` 与基座 `portal-apps.ts` 的 `name` 完全一致
+- [ ] `VITE_MICRO_BASE_PATH` 与基座 `activeRule` 完全一致
+- [ ] `VITE_DEV_PORT` 与基座 `entry` 端口一致
+- [ ] `src/router/menu-map.ts` 的 key/path 与后端权限树一致
+- [ ] 本地 `pnpm dev` 可登录并进入 `/dashboard`
+
 核心修改项：
 
 | 文件 | 说明 |
