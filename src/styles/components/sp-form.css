@@ -1,0 +1,135 @@
+.sp-form__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0 16px;
+  width: 100%;
+}
+
+.sp-form__grid.sp-form-grid--2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.sp-form__grid.sp-form-grid--3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 768px) {
+  .sp-form__grid.sp-form-grid--2,
+  .sp-form__grid.sp-form-grid--3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.sp-form__item {
+  min-width: 0;
+}
+
+.sp-form__item .ant-switch,
+.sp-form__item .ant-checkbox-wrapper,
+.sp-form__item .ant-radio-wrapper {
+  width: auto;
+  max-width: 100%;
+}
+
+.sp-form__item--hidden {
+  display: none !important;
+}
+
+.sp-form__body--with-row-end .sp-form__grid {
+  align-items: end;
+}
+
+.sp-form__actions {
+  margin-top: 8px;
+  width: 100%;
+}
+
+.sp-form__actions--row-end {
+  margin-top: 0;
+  grid-column: -1;
+  justify-self: end;
+  align-self: end;
+}
+
+.sp-form__actions--left .sp-form__action-bar {
+  justify-content: flex-start;
+}
+
+.sp-form__actions--center .sp-form__action-bar {
+  justify-content: center;
+}
+
+.sp-form__actions--right .sp-form__action-bar {
+  justify-content: flex-end;
+}
+
+.sp-form__actions--layout-inline {
+  margin-top: 0;
+}
+
+.sp-form__action-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.sp-form__action-space .ant-space-item {
+  display: inline-flex;
+  align-items: center;
+}
+
+.sp-form__collapse-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  line-height: 1;
+  padding: 0 4px 0 0;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.sp-form__collapse-btn.ant-btn-link {
+  height: 32px;
+  line-height: 32px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.sp-form__control-with-affix {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.sp-form__control-with-affix > :nth-child(2) {
+  flex: 1;
+  min-width: 0;
+}
+
+.sp-form__affix {
+  flex-shrink: 0;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.sp-form__help {
+  margin-top: 4px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.sp-form--compact .ant-form-item {
+  margin-bottom: 12px;
+}
+
+.sp-form--compact .ant-form-item-explain-connected {
+  min-height: 0;
+}
+
+.sp-form--compact .ant-form-item-margin-offset {
+  margin-bottom: 0 !important;
+}

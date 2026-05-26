@@ -1,0 +1,47 @@
+{
+  "name": "admin-micro-template",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Vue3 + Vite 后台管理微前端模板（源自智慧电站，可复用于新业务系统）",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --mode development",
+    "build:sider": "pnpm --filter @admin-template/admin-sider build",
+    "build": "vue-tsc -b && vite build --mode production",
+    "build:test": "vue-tsc -b && vite build --mode test",
+    "preview": "vite preview --mode production",
+    "preview:test": "vite preview --mode test",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "@Oceaninnerpeace/public-base-request": "^0.1.0",
+    "@admin-template/admin-sider": "workspace:*",
+    "@ant-design/icons-vue": "^7.0.1",
+    "ant-design-vue": "^4.2.6",
+    "axios": "^1.7.9",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0",
+    "vuex": "^4.1.0",
+    "vite-plugin-qiankun": "^1.0.15"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/node": "^22.15.21",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@tailwindcss/vite": "^4.1.13",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-vue": "^10.5.1",
+    "globals": "^16.5.0",
+    "prettier": "^3.6.2",
+    "tailwindcss": "^4.1.13",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.46.2",
+    "vite": "^6.0.11",
+    "vue-eslint-parser": "^10.2.0",
+    "vue-tsc": "^2.2.0"
+  }
+}

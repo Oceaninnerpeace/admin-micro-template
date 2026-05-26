@@ -1,0 +1,11 @@
+node_modules
+dist
+.npmrc
+.DS_Store
+*.local
+.env.local
+.env.*.local
+.idea
+.vscode
+*.log
+node_modules/.tmp

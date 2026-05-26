@@ -1,0 +1,141 @@
+.form-demo-page {
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.form-demo-section {
+  width: 100%;
+}
+
+.form-demo-title {
+  margin: 0 0 16px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.form-demo-actions {
+  margin-top: 8px;
+}
+
+.form-demo-json {
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #1a3a5c;
+  background: rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.75);
+  overflow: auto;
+}
+
+.route-placeholder {
+  padding: 8px 4px 32px;
+}
+
+.route-placeholder-title {
+  margin: 0 0 12px;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.route-placeholder-desc {
+  margin: 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.err-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.err-page--403 {
+  background: linear-gradient(160deg, #2a1215 0%, #1a0a0c 100%);
+}
+
+.err-page--404 {
+  background: linear-gradient(160deg, #0b1f35 0%, #001529 100%);
+}
+
+.err-card {
+  text-align: center;
+  max-width: 440px;
+  padding: 40px 32px;
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+}
+
+.err-page--403 .err-card {
+  max-width: 440px;
+  border: 1px solid rgba(255, 77, 79, 0.35);
+  background: rgba(42, 18, 21, 0.85);
+}
+
+.err-page--404 .err-card {
+  max-width: 420px;
+  border: 1px solid rgba(105, 177, 255, 0.25);
+  background: rgba(13, 40, 71, 0.75);
+}
+
+.err-code {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.06em;
+}
+
+.err-page--403 .err-code {
+  color: #ff7875;
+}
+
+.err-page--404 .err-code {
+  color: #69b1ff;
+}
+
+.err-title {
+  margin: 16px 0 8px;
+  font-size: 22px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.err-desc {
+  margin: 0 0 24px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.6;
+}
+
+.err-link {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+}
+
+.err-page--403 .err-link {
+  background: #cf1322;
+}
+
+.err-page--403 .err-link:hover {
+  background: #f5222d;
+  color: #fff;
+}
+
+.err-page--404 .err-link {
+  background: #1677ff;
+}
+
+.err-page--404 .err-link:hover {
+  background: #4096ff;
+  color: #fff;
+}
